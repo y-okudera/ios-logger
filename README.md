@@ -9,7 +9,7 @@ iOS カスタムログ(Swift3)
 | error | エラーを出力する | Logger.error(message: "demo4") |
 
 
-| 出力 |
+| 出力例 |
 |:-----------:|
 | 2017/04/04 3:05:32 line:24 @ViewController.swift viewDidLoad() [DEBUG] => "demo1" |
 | 2017/04/04 3:11:12 line:25 @ViewController.swift viewWillAppear [INFO] => "demo2" |
