@@ -11,7 +11,7 @@ iOS カスタムログ(Swift3)
 
 | 出力例 |
 |:-----------:|
-| 2017/04/04 3:05:32 line:24 @ViewController.swift viewDidLoad() [DEBUG] => "demo1" |
-| 2017/04/04 3:11:12 line:25 @ViewController.swift viewWillAppear [INFO] => "demo2" |
-| 2017/04/04 3:11:25 line:30 @ViewController.swift didReceiveMemoryWarning() [WARNING] => "demo3" |
-| 2017/04/04 3:11:12 line:35 @ViewController.swift viewDidAppear [ERROR] => "demo4" |
+| [2017/04/06 1:41:51] viewDidLoad() @ViewController.swift(line 16) [DEBUG] => "demo1" |
+| [2017/04/06 1:41:51] viewWillAppear @ViewController.swift(line 22) [INFO] => "demo2" |
+| [2017/04/06 1:42:20] didReceiveMemoryWarning() @ViewController.swift(line 27) [WARNING] => "demo3" |
+| [2017/04/06 1:41:51] viewDidAppear @ViewController.swift(line 32) [ERROR] => "demo4" |

@@ -46,7 +46,7 @@ class Logger: NSObject {
             if let match = filename.range(of: "[^/]*$", options: .regularExpression) {
                 filename = filename.substring(with: match)
             }
-            print("\(nowdate) line:\(line) @\(filename) \(function) \(loglevel) => \"\(message)\" ")
+            print("[\(nowdate)] \(function) @\(filename)(line \(line)) \(loglevel) => \"\(message)\" ")
         #endif
     }
 }

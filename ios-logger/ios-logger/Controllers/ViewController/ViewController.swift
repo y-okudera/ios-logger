@@ -8,27 +8,28 @@
 
 import UIKit
 
-struct Sample {
-    var name: String? {
-        didSet {
-            Logger.debug(message: "\(name)")
-        }
-    }
-}
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Logger.debug(message: "foo\nbar")
+        Logger.debug(message: "demo1")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        var sample = Sample()
-        sample.name = "名前"
+        Logger.info(message: "demo2")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        Logger.warning(message: "demo3")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        Logger.error(message: "demo4")
     }
 }
 
