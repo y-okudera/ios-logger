@@ -16,7 +16,7 @@ class Logger: NSObject {
         Logger.write(loglevel: "[DEBUG]", message: message, function: function, file: file, line: line)
     }
     
-    /// サーバ情報
+    /// 一般情報
     static func info(message: String, function: String = #function, file: String = #file, line: Int = #line) {
         Logger.write(loglevel: "[INFO]", message: message, function: function, file: file, line: line)
     }
