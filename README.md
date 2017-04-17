@@ -4,7 +4,7 @@ iOS カスタムログ(Swift3)
 | メソッド名 | 説明 | サンプル |
 |:-----------:|:------------:|:------------:|
 | debug | デバッグ情報を出力する | Logger.debug(message: "demo1") |
-| info | サーバ情報を出力する | Logger.info(message: "demo2") |
+| info | 一般情報を出力する | Logger.info(message: "demo2") |
 | warning | 警告を出力する | Logger.warning(message: "demo3") |
 | error | エラーを出力する | Logger.error(message: "demo4") |
 
