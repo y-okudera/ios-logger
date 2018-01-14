@@ -46,7 +46,7 @@ final class Logger {
             if let match = filename.range(of: "[^/]*$", options: .regularExpression) {
                 filename = String(filename[match])
             }
-            print("[\(nowdate)] \(function) @\(filename)(line \(line)) \(loglevel) => \"\(message)\" ")
+            print("[\(nowdate)] \(function) @\(filename)(Line \(line)) \(loglevel) > \"\(message)\"")
         #endif
     }
 }
