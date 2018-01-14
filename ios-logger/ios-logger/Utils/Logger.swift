@@ -9,7 +9,7 @@
 import Foundation
 
 /// カスタムログ
-class Logger: NSObject {
+final class Logger {
     
     /// デバッグ情報
     static func debug(message: String, function: String = #function, file: String = #file, line: Int = #line) {
@@ -44,7 +44,7 @@ class Logger: NSObject {
             
             var filename = file
             if let match = filename.range(of: "[^/]*$", options: .regularExpression) {
-                filename = filename.substring(with: match)
+                filename = String(filename[match])
             }
             print("[\(nowdate)] \(function) @\(filename)(line \(line)) \(loglevel) => \"\(message)\" ")
         #endif
